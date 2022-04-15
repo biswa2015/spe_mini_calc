@@ -1,14 +1,8 @@
 ---
-- name: Deploy a jar file
+- name: Pull docker image of devopscalculator
   hosts: all
-  remote_user: root
   tasks:
-    - name: Installing java8 package
-      apt:
-        name: openjdk-8-jdk
-        state: present
-    - name: Copy jar file to home directory
-      copy:
-        src: ./target/CalculatorDevops-1.0-SNAPSHOT-jar-with-dependencies.jar
-        dest: ~/
-        mode: '0755'
+    - name: Pull devopscalculator devops image
+      docker_image:
+        name: biswa2015/spe_mini
+        source: pull
