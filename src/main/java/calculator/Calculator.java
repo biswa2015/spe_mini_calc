@@ -22,7 +22,7 @@ public class Calculator {
         double factorial = 1;
         for(int i = 1; i <= num; i++)
          factorial = factorial * i;   
-        return  facto;
+        return  factorial;
     }
     public double getFactoral(double num) {
         logger.info("[FACTORIAL] - " + num);
@@ -61,7 +61,7 @@ public class Calculator {
         Calculator calc = new Calculator();
         Scanner scanner = new Scanner(System.in);
         double num1, num2;
-        bool loop = true;
+        boolean loop = true;
         while(loop) {
             System.out.println("Calculator : ");
             System.out.print("1 : Factorial\n2 : Square Root\n3 : Power\n4 Natural Logarithm\n" +
