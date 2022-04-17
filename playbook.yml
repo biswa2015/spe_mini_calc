@@ -1,0 +1,8 @@
+---
+- name: Pull docker image of devopscalculator
+  hosts: all
+  tasks:
+    - name: Pull devopscalculator devops image
+      docker_image:
+        name: biswa2015/spe_mini
+        source: pull

@@ -1,0 +1,1 @@
+localhost 172.16.134.65 ansible_ssh_user = biswad ansible_ssh_pass = bdas@246
