@@ -13,9 +13,9 @@ public class Calculator {
     }
 
     public double getSquareRoot(double num) {
-        logger.info("SQUARE ROOT OF " + num);
+        logger.info("- SQUARE ROOT - " + num);
         double ans = Math.sqrt(num);
-        logger.info("ANSWER - SQUARE ROOT OF " + num + " IS " + ans);
+        logger.info("- SQUARE ROOT - " + num + " - ANSWER " + ans);
         return ans;
     }
     public double fact(double num) {
@@ -25,21 +25,21 @@ public class Calculator {
         return  factorial;
     }
     public double getFactoral(double num) {
-        logger.info("FACTORIAL OF " + num);
+        logger.info("- FACTORIAL - " + num);
         double ans = fact(num);
-        logger.info("ANSWER - FACTORIAL OF " + num + " IS " + ans);
+        logger.info("- FACTORIAL - " + num + " - ANSWER " + ans);
         return ans;
     }
 
     public double getPower(double num, double power) {
-        logger.info(num + " RAISED TO THE POWER OF " + power);
+        logger.info("- POWER - " + num + " RAISED TO " + power);
         double ans = Math.pow(num, power);
-        logger.info(" ANSWER - " + num + " RAISED TO THE POWER OF " + power + " IS " + ans);
+        logger.info("- POWER - " + num + " RAISED TO " + power + " - ANSWER " + ans);
         return ans;
     }
 
     public double getNaturalLog(double num) {
-        logger.info("NATURAL LOG OF " + num);
+        logger.info("- NATURAL LOG - " + num);
         double ans = 0;
         try {
 
@@ -51,9 +51,9 @@ public class Calculator {
                 ans = Math.log(num);
             }
         } catch (ArithmeticException error) {
-            System.out.println("[EXCEPTION - LOG] - Cannot find log of negative numbers " + error.getLocalizedMessage());
+            System.out.println("EXCEPTION LOG - Cannot find log of negative numbers " + error.getLocalizedMessage());
         }
-        logger.info("ANSWER - NATURAL LOG OF " + num + " IS " + ans);
+        logger.info("- NATURAL LOG - " + num + " - ANSWER " + ans);
         return ans;
     }
     public static void main(String[] args) {
